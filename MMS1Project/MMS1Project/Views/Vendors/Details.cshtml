@@ -1,0 +1,62 @@
+﻿@model MMS1Project.Models.Vendor1
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Vendor1</legend>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id)
+    </div>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VendorName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VendorName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VendorAddress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VendorAddress)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.URL)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.URL)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VendorType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VendorType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Messages)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Messages)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

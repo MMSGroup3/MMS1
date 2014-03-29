@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "MMS";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                This Marketing Management system will work both for the vendors and for the customers to allow each group to associate themselves with events, products, or people that share the same types of interests.
+            </p>
+        </div>
+    </section>
+}
+<h3>MMS Maintenance</h3>
+<ol class="round">
+    <li class="one">
+        <h5>Vender Management</h5>
+        @Html.ActionLink("Vendor", "Index", "Vendors")
+        <br />
+        Click this link to be able to add, edit and delete Vendors. <br />
+        Administrator make sure to use correct data for the Vendor URL. This will be used to calculate<br />
+        the most popular vendors in an area of interest.  
+    </li>
+
+    <li class="two">       
+        <h5>Customer Management</h5>
+        @Html.ActionLink("Customer", "Index", "Customer")
+        <br />
+        Click this link to be able to add, edit and delete Customers. <br />
+        Administrator make sure to enter correct Customer interests. This data will be used to match<br />
+        the events and to allow venders to plan future events.  
+    </li>
+
+    <li class="three">
+        <h5>Event Management</h5>
+        @Html.ActionLink("Events", "Index", "MMSEvent")
+        <br />
+        This shows the listing of all events available to customers
+    </li>
+</ol>

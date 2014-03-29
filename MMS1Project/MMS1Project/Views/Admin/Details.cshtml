@@ -1,0 +1,34 @@
+﻿@model MMS1Project.Models.Admin1
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Admin</legend>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id)
+    </div>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.userName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.userName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Password)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
