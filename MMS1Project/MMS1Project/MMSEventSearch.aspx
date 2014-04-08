@@ -9,16 +9,18 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        This screen is to search for Events by a customer
+        This screen is to search for Events
     </div>
         <asp:RadioButton ID="rdbSimpleSearch" runat="server" Text="Simple Search" GroupName="SearchType" />
         <asp:RadioButton ID="rdbRankedSearch" runat="server" Text="Ranked Search" GroupName="SearchType" />
         <div>
         <asp:Label ID="lblKeyword">Keyword: </asp:Label><asp:TextBox ID="txtKeyword" runat="server"></asp:TextBox>
-        <br />
-        <asp:Button ID="btnSubmit" runat="server" Text="Search" OnClick="btnSubmit_Click" />
-        <br />
-            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <asp:Button ID="btnSubmit" runat="server" Text="Search" OnClick="btnSubmit_Click" />
+        </div>
         <asp:DataGrid ID="grdEvents" runat="server" ></asp:DataGrid>
     </form>
 </body>
